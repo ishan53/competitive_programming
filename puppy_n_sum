@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+  int t;
+  cin>>t;
+  while(t--){
+   long  int d,n;
+    cin>>d>>n;
+  long  int total;
+    while(d--){
+      total=0;
+    for(long int i=1;i<=n;i++){
+      total=total+i;
+    }
+    n=total;
+    }
+   cout<<total<<endl;
+  }
+  return 0;
+}
