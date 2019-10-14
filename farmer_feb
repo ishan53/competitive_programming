@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+bool isprime(int a){
+  
+  int counter=0; 
+    for (int i=2; i<=a/2; i++) 
+    if (a%i==0) 
+    counter++; 
+    
+    if (counter==0) 
+    return true;
+    else 
+    return false;
+}
+int main(){
+  int t;
+  cin>>t;
+  while(t--){
+    int i;
+  int x,y;
+  cin>>x>>y;
+  int sum=x+y;
+  for( i=sum+1; !isprime(i);i++);
+  cout<<i-sum<<endl;
+  }
+  return 0;
+}
