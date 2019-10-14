@@ -1,0 +1,31 @@
+#include <iostream>
+using  namespace std;
+int main() {
+int t;
+cin>>t;
+while(t--){
+  int n,m,k,diff=0;
+  cin>>n>>m>>k;
+  if(n==m){
+    diff=n-m;
+  }
+  else{
+    while(k--){
+      if(n==m){
+        diff=n-m;
+        break;
+      }
+      if(n<m){
+        n=n+1;
+        diff=m-n;
+      }
+      else{
+       m=m+1;
+       diff=n-m;
+      }
+    }
+  }
+  cout<<diff<<endl;
+}
+  return 0;
+}
