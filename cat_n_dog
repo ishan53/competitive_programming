@@ -1,0 +1,27 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int t;
+  cin>>t;
+  while(t--){
+   long long int c,d,l;
+    cin>>c>>d>>l;
+  long long  int max_leg=4*(c+d);
+  long long  int min_leg;
+    if(c>(d*2)){
+      min_leg=(c-(d*2)+d)*4;
+    }
+    else{
+      min_leg=d*4;
+    }
+    if(l%4==0 && l<=max_leg && l>=min_leg){
+      cout<<"yes"<<endl;
+    }
+    else{
+      cout<<"no"<<endl;
+    }
+  }
+  return 0;
+}
